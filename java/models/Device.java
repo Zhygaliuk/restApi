@@ -10,7 +10,7 @@ public abstract class Device {
     protected String brand;
     protected String produce;
 
-    Device(String name, int price, String brand, String produce) {
+   public Device(String name, int price, String brand, String produce) {
         this.name = name;
         this.price = price;
         this.brand = brand;

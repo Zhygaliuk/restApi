@@ -13,9 +13,9 @@ import java.util.List;
 public class App {
     public static void main(final String[] args) {
         List<Device> allObjects = List.of(
-                new Keyboard("A=1", 111, "Logitech", "Chine", "Eng"),
-                new Monitor("Aboba", 153, "HuperX", "English", 23),
-                new Keyboard("Axuba", 56, "KOrsar", "Ukraine", "Us")
+                new Keyboard("A-1", 100, "Logitech", "Chine", "Eng"),
+                new Monitor("F-2", 90, "HuperX", "English", 23),
+                new Keyboard("D-3", 150, "KOrsar", "Ukraine", "Us")
         );
         DeviceManager deviceManager = new DeviceManager(allObjects);
 
@@ -24,7 +24,7 @@ public class App {
         System.out.println("--------------------------------------------");
 
         System.out.println("Sorting by price");
-        DeviceManager.printSortedObjects(deviceManager.sortByPrice(true));
+        DeviceManager.printSortedObjects(deviceManager.sortByPrice(false));
         System.out.println("--------------------------------------------");
 
         System.out.println("Search by produce");
