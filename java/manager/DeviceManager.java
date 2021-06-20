@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 @AllArgsConstructor
 public class DeviceManager {
-    private final List<Device> allObjects;
+    private final List<Device> allObjects ;
 
     public List<Device> searchByName(String name) {
         return allObjects.stream().filter(device -> device.getName()  == name).collect(Collectors.toList());
